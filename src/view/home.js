@@ -35,6 +35,7 @@ class Home extends Component {
     this.setState({ tweetText: event.target.value });
   }
 
+  //tweet atma özelliklerinin implementasyonu
   handleTweetSubmit() {
     const newTweet = [...this.state.tweets];
     const currentUser = JSON.parse(localStorage.getItem("isLoggedIn"));
@@ -43,9 +44,9 @@ class Home extends Component {
       name: currentUser[0].name,
       username: currentUser[0].username,
       tweetContent: this.state.tweetText,
-      likeCount: 100,
-      retweetCount: 200,
-      replyCount: 50,
+      likeCount: 10,
+      retweetCount: 20,
+      replyCount: 5,
       dateTime: new Date().toISOString(),
     });
 

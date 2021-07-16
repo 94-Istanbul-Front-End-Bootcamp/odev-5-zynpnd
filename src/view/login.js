@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Redirect, useHistory } from "react-router-dom";
 import { Icon } from "../component/icon";
 
+// login olma
 const Login = ({ setisLoggedIn }) => {
   console.log("render oldu");
 
@@ -39,7 +40,6 @@ const Login = ({ setisLoggedIn }) => {
   };
 
   //   Kontrol
-
   const onSubmit = (e) => {
     e.preventDefault();
 
